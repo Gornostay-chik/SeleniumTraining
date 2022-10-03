@@ -62,7 +62,7 @@ public class MouseOver {
 		WebElement iFrame = driver.findElement(By.xpath("/html/body/div[5]/div[1]/ul/li[3]/div[2]/div[2]/iframe"));
 		//переключаемся по фрейм
 		driver.switchTo().frame(iFrame);
-		//находим сам баннер и нажимаем на него
+		//находим сам баннер и нажимаем на этот баннер
 		WebElement banner = driver.findElement(By.xpath("/html/body/a"));
 		banner.click();
 		
