@@ -45,9 +45,9 @@ public class WebTable {
 		for(int i=1;i<=rowSize; i++) {
 			for(int j=1; j<=columnSize; j++) {
 				String cellText = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[3]/div[1]/div/div[1]/table/tbody/tr["+i+"]/td["+j+"]")).getText();
-				System.out.print(cellText);
+				System.out.print(cellText + "	");
 			}
-			System.out.println(" ");
+			System.out.println("");
 		}
 		
 		driver.quit();
